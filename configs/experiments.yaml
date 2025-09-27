@@ -1,0 +1,44 @@
+# Global experiment settings (can be overridden by individual experiments)
+settings:
+  num_agents: 16
+  num_rounds: 25
+  n_repeats: 1
+  model: deepseek-chat
+  temperature: 0.7
+
+experiments:
+  - id: same_as_you
+    name: Presumed Same as You
+    description: Agents believe they are interacting with other LLM agents
+    instructions: The other entities are given the same instructions as you, and are LLM agents like you.
+
+
+  - id: constant_defection
+    name: Presumed Constant Defection
+    description: Agents believe others will always defect
+    instructions: The other entities will always defect.
+
+  - id: constant_random
+    name: Presumed Constant Random
+    description: Agents believe others choose randomly
+    instructions: The other entities are given the same instructions, but will always choose randomly between cooperate and defect.
+
+  - id: us_conservative
+    name: Presumed US Conservative
+    description: Agents believe they interact with US conservatives
+    instructions: The other entities are given the same instructions, but, unlike you, are all humans and are all Americans with conservative views.
+
+  - id: us_liberal
+    name: Presumed US Liberal
+    description: Agents believe they interact with US liberals
+    instructions: The other entities are given the same instructions, but, unlike you, are all humans and are all Americans with liberal views.
+
+  - id: human
+    name: Presumed Human
+    description: Agents believe they are interacting with human players
+    instructions: The other entities are given the same instructions, but, unlike you, are all human.
+
+  - id: constant_cooperation
+    name: Presumed Constant Cooperation
+    description: Agents believe others will always cooperate
+    instructions: The other entities are given the same instructions, but will always cooperate.
