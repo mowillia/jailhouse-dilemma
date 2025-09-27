@@ -56,7 +56,10 @@ This repository contains:
    ```
 
 ## Environment variables (.env.example)
-- DEEPSEEK_API_KEY: API key for the DeepSeek chat model used by agents
+```
+# .env.example file
+- DEEPSEEK_API_KEY: #API key for the DeepSeek chat model used by agents
+```
 
 ## Outputs
 - Experiment runs are saved under data/runs/run_YYYYMMDD_HHMMSS/
