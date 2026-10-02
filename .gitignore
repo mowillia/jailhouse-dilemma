@@ -5,3 +5,5 @@
 __pycache__/*
 checklist.md
 /run_
+.venv/
+Jailhouse_Dilemma_Paper/build/
